@@ -1,11 +1,28 @@
-<h1>{{myData.name}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pongksathorn Junha Portfolio</title>
+    <link rel="stylesheet" href="/index.css"> 
+   </head>
+  <body>
+<center>
+<h1>Profile</h1>
+<img src="/images/profile.jpg" height="300" width="tranparent">
 <div>
    <ul class="info">
        {{#with myData.aboutme}}
-       <li><span class="first-block">Fullname:</span><span class="second-block">{{fullname}}</span></li>
-       <li><span class="first-block">Phone:<span><span class="second-block"></span>{{Phone}}</span></li>
-       <li><span class="first-block">Email:<a href="{{Email}}"></span><span class="second-block">{{Email}}</a></span></li>
-       <li><span class="first-block">Address:</span><span class="second-block"></span>{{Address}} </span></li>
+       </li><span class="first-block">Fullname :</span>&nbsp;&nbsp;<span class="second-block">{{fullname}}</span></li>
+       <li><span class="first-block">Age :</span>&nbsp;&nbsp;<span class="second-block">{{age}}</span></li>
+       <li><span class="first-block">Date :</span>&nbsp;&nbsp;<span class="second-block">{{date}}</span></li>
+       <li><span class="first-block">Phone :<span>&nbsp;&nbsp;<span class="second-block"></span>{{Phone}}</span></li>
+       <li><span class="first-block">Email :</span>&nbsp;&nbsp;<span class="second-block">{{Email}}</span></li>
+       <li><span class="first-block">Address :</span>&nbsp;&nbsp;<span class="second-block"></span>{{Address}} </span></li>
         {{/with}}
         </ul>
         </div>
+  </center>
+  </body>
+</html>
