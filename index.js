@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 app.engine('hbs',hbs({extname:'hbs'}));
 app.set('view engine', 'hbs');
-app.use('/portfolio',router);
+app.use('/',router);
 app.use(express.static(path.join(__dirname,'public')));
 
 
